@@ -4,10 +4,24 @@
   "description": "My first containerized Node.js app",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "express": "^4.19.2",
     "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.9",
+    "supertest": "^7.3.1"
   }
 }

@@ -34,7 +34,7 @@ app.get('/db-time', async (req, res) => {
     res.json({
       status: 'connected',
       dbTime: result.rows[0].now,
-      message: '🎉 Your app is talking to PostgreSQL!'
+      message: '🎉 Your app is talking to PostgreSQL!',
     });
   } catch (err) {
     res.status(500).json({ status: 'error', message: err.message });
