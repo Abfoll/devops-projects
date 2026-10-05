@@ -1,0 +1,12 @@
+{
+  "name": "hello-devops",
+  "version": "1.0.0",
+  "description": "My first containerized Node.js app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
